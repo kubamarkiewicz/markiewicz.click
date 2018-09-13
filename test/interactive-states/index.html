@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>demo</title>
+    <meta name="description" content="">
+
+    <!-- Le styles -->
+    <link href="js/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+	<!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
+</head>
+<body>
+
+	<div class="container">
+
+		<br>
+
+		<p>
+			<a href="javascript:" class="link">click here</a>
+		</p>
+
+		<p>
+			<a href="javascript:" class="link">click here</a>
+		</p>
+
+		<p>
+			<a href="javascript:" class="link">click here</a>
+		</p>
+
+
+		<p>
+			<span class="legend normal">normal</span>
+			<span class="legend touchstart">touchstart</span>
+			<span class="legend hover">hover, focus</span>
+			<span class="legend active">active</span>
+		</p>
+
+	</div><!-- /.container -->
+
+	<!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="js/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+	<script>
+		$(function(){
+
+			$('.link').on('touchstart', function(){
+				$(this).addClass('touchstart');
+			});
+			$('.link').on('touchend', function(){
+				$(this).removeClass('touchstart');
+			});
+		});
+	</script>
+
+</body>
+</html>

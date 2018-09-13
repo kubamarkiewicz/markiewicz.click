@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+
+    <title>demo</title>
+    <meta name="description" content="">
+
+    <!-- Le styles -->
+    <link href="js/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+	<style>
+		html, body {
+			height: 100%;
+		}
+		body.red {
+			background-color: red;
+			touch-action: manipulation;
+		}
+		.container {
+			display: flex;
+  			align-items: center;
+  			justify-content: center;
+  			height: 100%;
+		}
+	</style>
+
+	<!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
+</head>
+<body>
+
+	<div class="container">
+		<p>tap here</p>
+	</div>
+
+	<audio id="click-player" src="sounds/tick_.mp3"></audio>
+
+	<!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="js/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+	<script>
+		
+		$(function() {
+
+			var player = document.getElementById("click-player");
+
+			$('body').click(function(){
+				$(this).toggleClass('red');
+				player.play();
+			});
+
+			document.body.addEventListener('touchstart', function () { 
+				this.click();
+			});
+			document.body.addEventListener('touchend', function (event) { 
+            	event.preventDefault();
+			});
+
+		});
+
+	</script>
+
+</body>
+</html>

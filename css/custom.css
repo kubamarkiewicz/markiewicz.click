@@ -1,0 +1,198 @@
+
+/************************************************
+Bootstrap 4 Responsive breakpoints
+
+ sm - Small devices			>= 576px
+ md - Medium devices		>= 768px
+ lg - Large devices			>= 992px
+ xl - Extra large devices	>= 1200px
+
+************************************************/
+
+
+/***********************************************/
+/* Fonts                                       */
+/***********************************************/
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700');
+.oswald {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+/***********************************************/
+/* General styles                              */
+/***********************************************/
+html { 
+	font-size: 12px; /* define 1rem */
+}
+body {
+	color: #000000;
+	background-color: #ffffff;
+	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+	/* text-transform: uppercase; */
+}
+a {
+	color: #000000;
+	text-decoration: none;
+	transition: all 0.15s ease;
+}
+ /* on hover, select */
+a:hover,
+a.selected { 
+    color: #ffffff;
+    text-decoration: none;
+    /* opacity: 0.8; */
+    background-color: #00d0b6;
+}
+a:focus { 
+	/*opacity: 0.8;*/
+    color: #ffffff;
+    background-color: #00d0b6;
+}
+/* on press */
+a:active {  
+	opacity: 0.8;
+    color: #ffffff;
+    background-color: #00d0b6;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+h1 {
+	font-weight: 700;
+	font-size: 3rem;
+}
+h2 {
+}
+h3 {
+}
+h4 {
+}
+h5 {
+}
+h1.alternate, h2.alternate, h3.alternate, h4.alternate, h5.alternate, h6.alternate {
+	/*font-family: 'Encode Sans Expanded', sans-serif;*/
+	/*text-transform: uppercase;*/
+	font-weight: 700;
+	letter-spacing: 0;
+}
+h2 > strong {
+	font-weight: 100;
+}
+hr {
+}
+img {
+	max-width: 100%;
+}
+
+
+/* loading */
+body.loading p,
+body.loading a,
+body.loading span,
+body.loading h1,
+body.loading h2,
+body.loading h3,
+body.loading h4,
+body.loading h5,
+body.loading > footer
+	visibility: hidden;
+}
+
+
+
+/* mobile */
+@media screen and (max-width: 991px) {
+
+}
+
+/***********************************************/
+/* Layout divs                                 */
+/***********************************************/
+
+
+/***********************************************/
+/* Overwritten Bootstrap Styles                */
+/***********************************************/
+
+.container {
+	max-width: calc(100% - 66px);
+}
+
+
+#sidebar {
+	position: fixed;
+}
+#main {
+
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+	.container {
+		max-width: 100%;
+	}
+	#sidebar {
+		position: relative;
+	}
+
+}
+
+
+/***********************************************/
+/* Animations                                  */
+/***********************************************/
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/***********************************************/
+/* Forms                                       */
+/***********************************************/
+
+
+/***********************************************/
+/* Components	               		           */
+/***********************************************/
+
+
+.btn {
+	font-family: 'Oswald', sans-serif;
+	/*letter-spacing: 0.1em;*/
+	font-weight: 200;
+	text-transform: uppercase;
+	font-size: 1.4rem;
+}
+
+
+#sidebar h2 {	
+	margin: 50px 0;
+}
+#sidebar nav a {text-transform: uppercase;}
+
+#main h1 {
+	margin-top: 38px;
+	margin-bottom: 44px;
+}
+
+
+
+@media screen and (max-width: 991px) {
+
+	
+
+}
+
