@@ -128,7 +128,7 @@ body.loading > footer
 	position: fixed;
 }
 #main {
-
+margin-bottom: 50px;
 }
 
 
@@ -188,6 +188,9 @@ body.loading > footer
 	margin-bottom: 44px;
 }
 
+.gallery {
+	margin-top: 30px;
+}
 
 
 @media screen and (max-width: 991px) {

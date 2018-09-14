@@ -11,19 +11,9 @@ app.config(function ($routeProvider, $locationProvider) {
     $routeProvider 
 
         .when('/', { 
-            templateUrl: 'js/pages/home/index.html' 
         })  
-        .when('/ciudadmigrante', { 
-            templateUrl: 'js/pages/ciudadmigrante/index.html' 
-        }) 
-        .when('/shelloffers', { 
-            templateUrl: 'js/pages/shelloffers/index.html' 
-        })  
-        .when('/neotecman', { 
-            templateUrl: 'js/pages/neotecman/index.html' 
-        })     
-        .otherwise({ 
-            redirectTo: '/' 
+        .when('/:page', { 
+            templateUrl: function(params){ return 'js/pages/' + params.page + '/index.html'; }
         }); 
 
     // remove hashbang
@@ -44,7 +34,6 @@ app.run(function($rootScope, $sce, $http, $location) {
         return $sce.trustAsHtml(string);
     };
 
-    
 
     $('#sidebar nav a').click(function(){
         $('#sidebar nav a').removeClass('selected');
