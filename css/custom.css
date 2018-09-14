@@ -128,7 +128,7 @@ body.loading > footer
 	position: fixed;
 }
 #main {
-margin-bottom: 50px;
+margin-bottom: 50px;
 }
 
 
@@ -180,6 +180,9 @@ body.loading > footer
 
 #sidebar h2 {	
 	margin: 50px 0;
+}
+#sidebar h5 {	
+	margin-bottom: 20px;
 }
 #sidebar nav a {text-transform: uppercase;}
 
